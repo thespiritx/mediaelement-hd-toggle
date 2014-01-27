@@ -5,7 +5,7 @@ require 'mediaelement-hd-toggle/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "mediaelement-hd-toggle"
-  spec.version       = MediaElement::HDToggle::VERSION
+  spec.version       = Mediaelement::HDToggle::VERSION
   spec.authors       = ["phuongdh"]
   spec.email         = ["phuongdh@gmail.com"]
   spec.description   = ""

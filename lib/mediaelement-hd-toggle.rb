@@ -1,6 +1,6 @@
 require "mediaelement-hd-toggle/engine"
 
-module MediaElement
+module Mediaelement
   module HDToggle
       # Your code goes here...
   end
