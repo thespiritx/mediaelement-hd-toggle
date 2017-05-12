@@ -21,14 +21,14 @@
 				}
 			}
 
-			player.hdtoggleButton = $('<div class="mejs-button mejs-hdtoggle-button">'+
+			player.hdtoggleButton = $('<div class="mejs__button mejs__hdtoggle-button">'+
 					'<button type="button" aria-controls="' + player.id + '" title="Toggle between HD and SD quality">' + player.options.hdToggleLabel + '</button>'+
 				'</div>').click(function(){
 					player.toggleQuality();
 				}).appendTo(controls);
 
 			if (player.options.hdToggleOn && player.qualities[0] != null) {
-				player.hdtoggleButton.addClass("mejs-hdtoggle-on");
+				player.hdtoggleButton.addClass("mejs__hdtoggle-on");
 				player.switchStream(player.qualities[0]);
 			} else if (player.qualities[1] != null) {
 				player.switchStream(player.qualities[1]);
@@ -39,11 +39,11 @@
 
 		toggleQuality: function() {
 			var btn = this.hdtoggleButton;
-			if (btn.hasClass("mejs-hdtoggle-on")) {
-				btn.removeClass("mejs-hdtoggle-on");
+			if (btn.hasClass("mejs__hdtoggle-on")) {
+				btn.removeClass("mejs__hdtoggle-on");
 				this.switchStream(this.qualities[1]);
 			} else {
-				btn.addClass("mejs-hdtoggle-on");
+				btn.addClass("mejs__hdtoggle-on");
 				this.switchStream(this.qualities[0]);
 			}
 		}
